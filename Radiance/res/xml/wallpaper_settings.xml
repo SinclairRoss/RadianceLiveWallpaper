@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res/com.raggamuffin.radiance"
+	android:title="livewallpaper_settings"
+	android:key="pref_Screen">
+	
+    <PreferenceCategory
+        android:key="Category_Settings"
+        android:title="@string/Category_Settings">
+        
+        <PreferenceScreen 
+		  	android:key="button_Particle_key"
+		  	android:title="@string/pref_Particle">
+		  	
+            <com.raggamuffin.radiance.dialogs.SeekBarDialog
+			    android:key="pref_Particle_Count"
+			    android:title="@string/pref_Count"
+			    custom:PreferenceName="pref_Particle_Count"
+			    custom:SeekBarMin="1"
+			    custom:SeekBarMax="1000"
+			    custom:Default="400"
+			    custom:Note="@string/pref_ParticleCount_Note"/> 
+			    
+            <com.raggamuffin.radiance.dialogs.ColourPickerDialog
+                android:key="pref_Particle_Colour"
+			    android:title="@string/pref_Colour"
+			    custom:PreferenceName="pref_Particle_Colour"
+			    custom:Default="659881794"
+			    custom:Note="@string/pref_ParticleColour_Note"/>   
+		  	
+            <com.raggamuffin.radiance.dialogs.SeekBarDialog
+			    android:key="pref_Particle_Drag"
+			    android:title="@string/pref_Drag"
+			    custom:PreferenceName="pref_Particle_Drag"
+			    custom:SeekBarMin="0"
+			    custom:SeekBarMax="40"
+			    custom:Default="8"
+			    custom:Note="@string/pref_ParticleDrag_Note"/>    
+			    
+            <com.raggamuffin.radiance.dialogs.SeekBarDialog
+			    android:key="pref_Particle_Scale"
+			    android:title="@string/pref_Scale"
+			    custom:PreferenceName="pref_Particle_Scale"
+			    custom:SeekBarMin="1"
+			    custom:SeekBarMax="500"
+			    custom:Default="90"
+			    custom:Note="@string/pref_ParticleScale_Note"/>  
+			    
+            <com.raggamuffin.radiance.dialogs.SeekBarDialog
+			    android:key="pref_Particle_Binding"
+			    android:title="@string/pref_Binding"
+			    custom:PreferenceName="pref_Particle_Binding"
+			    custom:SeekBarMin="0"
+			    custom:SeekBarMax="200"
+			    custom:Default="120"
+			    custom:Note="@string/pref_ParticleBinding_Note"/>    
+			 
+		</PreferenceScreen>
+		
+        <PreferenceScreen 
+	  		android:key="button_Graviton_key"
+		  	android:title="@string/pref_Graviton">
+            
+                <com.raggamuffin.radiance.dialogs.ColourPickerDialog
+               	android:key="pref_Graviton_Colour"
+		    	android:title="@string/pref_Colour"
+		    	custom:PreferenceName="pref_Graviton_Colour"
+		    	custom:Default="-13281"
+		    	custom:Note="@string/pref_GravitonColour_Note"/>  
+		    	
+                <com.raggamuffin.radiance.dialogs.SeekBarDialog
+                android:key="pref_Graviton_Colour_Radius"
+		    	android:title="@string/pref_Colour_Radius"
+		    	custom:PreferenceName="pref_Graviton_Colour_Radius"
+		    	custom:SeekBarMin="0"
+		    	custom:SeekBarMax="200"
+		    	custom:Default="70"
+		    	custom:Note="@string/pref_GravitonColourRadius_Note"/> 
+                
+          		<com.raggamuffin.radiance.dialogs.SeekBarDialog
+          	    android:key="pref_Graviton_Pull"
+		    	android:title="@string/pref_Pull"
+		    	custom:PreferenceName="pref_Graviton_Pull"
+		    	custom:SeekBarMin="1"
+		    	custom:SeekBarMax="300"
+		    	custom:Default="200"
+		    	custom:Note="@string/pref_GravitonPull_Note"/> 
+		    
+          		<com.raggamuffin.radiance.dialogs.SeekBarDialog
+         	    android:key="pref_Graviton_Speed"
+		    	android:title="@string/pref_Speed"
+		    	custom:PreferenceName="pref_Graviton_Speed"
+		    	custom:SeekBarMin="0"
+		    	custom:SeekBarMax="500"
+		    	custom:Default="400"
+		    	custom:Note="@string/pref_GravitonSpeed_Note"/>
+          		
+          		<com.raggamuffin.radiance.dialogs.SeekBarDialog
+         	    android:key="pref_Graviton_Binding"
+		    	android:title="@string/pref_Binding"
+		    	custom:PreferenceName="pref_Graviton_Binding"
+		    	custom:SeekBarMin="0"
+		    	custom:SeekBarMax="200"
+		    	custom:Default="70"
+		    	custom:Note="@string/pref_GravitonBinding_Note"/>
+         
+		</PreferenceScreen>
+		
+       	<PreferenceScreen 
+		  	android:key="button_Graviton_key"
+		  	android:title="@string/pref_Camera">
+          		
+             <com.raggamuffin.radiance.dialogs.SeekBarDialog
+        	    android:key="pref_Camera_OrbitRadius"
+		    	android:title="@string/pref_OrbitRadius"
+		    	custom:PreferenceName="pref_Camera_Orbit_Radius"
+		    	custom:SeekBarMin="0"
+		    	custom:SeekBarMax="200"
+		    	custom:Default="80"
+		    	custom:Note="@string/pref_CameraOrbitRadius_Note"/>
+             
+             <com.raggamuffin.radiance.dialogs.SeekBarDialog
+        	    android:key="pref_Camera_Mass"
+		    	android:title="@string/pref_Mass"
+		    	custom:PreferenceName="pref_Camera_Mass"
+		    	custom:SeekBarMin="1"
+		    	custom:SeekBarMax="100"
+		    	custom:Default="5"
+		    	custom:Note="@string/pref_CameraMass_Note"/>
+             
+             <com.raggamuffin.radiance.dialogs.SeekBarDialog
+        	    android:key="pref_Camera_Drag"
+		    	android:title="@string/pref_Drag"
+		    	custom:PreferenceName="pref_Camera_Drag"
+		    	custom:SeekBarMin="1"
+		    	custom:SeekBarMax="40"
+		    	custom:Default="5"
+		    	custom:Note="@string/pref_CameraDrag_Note"/>
+          		
+         </PreferenceScreen>
+        
+    </PreferenceCategory>
+        
+	<PreferenceCategory 
+		android:key="Category_About"
+		android:title="@string/Category_CompanyName">
+		
+		<com.raggamuffin.radiance.dialogs.TextDialog
+		    android:key="Button_About"
+		    android:title="@string/pref_About"/>
+	    
+	</PreferenceCategory>
+	
+</PreferenceScreen>

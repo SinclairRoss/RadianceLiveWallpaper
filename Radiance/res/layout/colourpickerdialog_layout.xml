@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <TextView
+        android:id="@+id/colourSample_ColourPickerDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="20dip"
+        android:layout_width="match_parent"
+        android:padding="5dip"
+        android:text="@string/Blank"
+        android:textSize="30sp"/>
+    
+    <TextView
+        android:id="@+id/redText_ColourPickerDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/colourSample_ColourPickerDialog"
+        android:text="@string/txt_red"
+        android:textSize="20sp"/>
+    
+    <TextView
+        android:id="@+id/redTextValue_ColourPickerDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@id/redText_ColourPickerDialog"
+        android:layout_toRightOf="@id/redText_ColourPickerDialog"
+        android:textSize="20sp"/>
+    
+    <SeekBar
+        android:id="@+id/redSeekBar_ColourPickerDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redText_ColourPickerDialog"/>
+    
+    <TextView
+        android:id="@+id/greenText_ColourPickerDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/redSeekBar_ColourPickerDialog"
+        android:text="@string/txt_green"
+        android:textSize="20sp"/>
+    
+    <TextView
+        android:id="@+id/greenTextValue_ColourPickerDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@id/greenText_ColourPickerDialog"
+        android:layout_toRightOf="@id/greenText_ColourPickerDialog"
+        android:textSize="20sp"/>
+
+    <SeekBar
+        android:id="@+id/greenSeekBar_ColourPickerDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greenText_ColourPickerDialog"/>
+    
+    <TextView
+        android:id="@+id/blueText_ColourPickerDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/greenSeekBar_ColourPickerDialog"
+        android:text="@string/txt_blue"
+        android:textSize="20sp"/>
+    
+    <TextView
+        android:id="@+id/blueTextValue_ColourPickerDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@id/blueText_ColourPickerDialog"
+        android:layout_toRightOf="@id/blueText_ColourPickerDialog"
+        android:textSize="20sp"/>
+    
+    <SeekBar
+        android:id="@+id/blueSeekBar_ColourPickerDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blueText_ColourPickerDialog"/>
+    
+    <TextView
+        android:id="@+id/alphaText_ColourPickerDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/blueSeekBar_ColourPickerDialog"
+        android:text="@string/txt_alpha"
+        android:textSize="20sp"/>
+    
+    <TextView
+        android:id="@+id/alphaTextValue_ColourPickerDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignBaseline="@id/alphaText_ColourPickerDialog"
+        android:layout_toRightOf="@id/alphaText_ColourPickerDialog"
+        android:textSize="20sp"/>
+    
+    <SeekBar
+        android:id="@+id/alphaSeekBar_ColourPickerDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alphaText_ColourPickerDialog"/>
+    
+</RelativeLayout>

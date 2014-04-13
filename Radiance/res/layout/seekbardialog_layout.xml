@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+    
+    <TextView
+        android:id="@+id/textValue_SeekDialog"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:padding="5dip"
+        android:text="@string/Blank"
+        android:textSize="30sp"/>
+    
+    <SeekBar
+        android:id="@+id/seekBar_SeekDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textValue_SeekDialog"
+        android:padding="5dip"/>
+    
+    <TextView 
+        android:id="@+id/textLeft_SeekDialog"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@id/seekBar_SeekDialog"
+        android:layout_above="@id/seekBar_SeekDialog"
+        android:text="@string/txt_low"
+        android:padding="5dip"/>
+    
+     <TextView 
+        android:id="@+id/textRight_SeekDialog"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignRight="@id/seekBar_SeekDialog"
+        android:layout_above="@id/seekBar_SeekDialog"
+        android:text="@string/txt_high"
+        android:padding="5dip"/>
+     
+     <TextView
+         android:id="@+id/textNote_SeekDialog"
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_below="@id/seekBar_SeekDialog"
+         android:text=""
+         android:padding="5dip"/>
+
+</RelativeLayout>

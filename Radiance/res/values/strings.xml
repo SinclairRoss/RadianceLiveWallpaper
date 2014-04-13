@@ -1,0 +1,58 @@
+<resources>
+
+    <string name="app_name">Radiance</string>
+    <string name="wallpaper_settings">Settings</string>
+    <string name="wallpaper_description">Radiance</string>
+    
+    <string name="Category_CompanyName">RaggaMuffin</string>
+    <string name="pref_About">About</string>
+    <string name="pref_ProTips">Pro tips</string>
+    <string name="RaggaMuffin_About">Hey thanks for using Radiance. Loads of work went into this and I\'m glad that you seem to be enjoying it. \n \n
+        							 If you want to check out some of my other work go to RaggamuffinGames.tumblr.com \n
+        							 Feel free to drop me an email with any questions, suggestions or maybe even job offers at S-Ross1992@hotmail.co.uk \n\n
+        							 And special thanks to Ben Gruver for GlWallpaperService. Thanks to you my wallpaper is very, very pretty.</string>
+        							 
+    <string name="Category_Settings">Settings</string>
+
+    <string name="txt_low">Low</string>
+    <string name="txt_high">High</string>
+    
+    <string name ="Blank"></string>
+    
+    <string name="pref_Particle">Particle Settings</string>
+    <string name="pref_Graviton">Graviton Settings</string>
+    <string name="pref_Camera">Camera Settings</string>
+
+    <string name="pref_Colour">Colour</string>
+    <string name="pref_Count">Count</string>
+    <string name="pref_Drag">Drag</string>
+    <string name="pref_Scale">Size</string>
+    <string name="pref_Pull">Pull</string>
+    <string name="pref_Speed">Speed</string>
+    <string name="pref_Binding">Binding Radius</string>
+    <string name="pref_Colour_Radius">Colour Effect Radius</string>
+    <string name="pref_Mass">Mass</string>
+    <string name="pref_OrbitRadius">Orbit Radius</string>
+    
+    <string name="pref_Options">Options</string>
+    
+    <string name="pref_ParticleCount_Note">The number of particles in the wallpaper.</string>
+    <string name="pref_ParticleColour_Note">The colour of the particles.</string>
+    <string name="pref_ParticleDrag_Note">The strength of air resistance.</string>
+    <string name="pref_ParticleScale_Note">The size of the particles.</string>
+    <string name="pref_ParticleBinding_Note">The radius of the sphere that binds the particles.</string>
+    <string name="pref_GravitonColour_Note">As particles approach the graviton they change to this colour.</string>
+    <string name="pref_GravitonPull_Note">The gravitational pull of the Graviton.</string>
+    <string name="pref_GravitonSpeed_Note">How fast the graviton moves</string>
+    <string name="pref_GravitonBinding_Note">The radius of the sphere that binds the graviton.</string>
+    <string name="pref_GravitonColourRadius_Note">The distance at which the graviton begins to affect the colour of the particles.</string>
+    <string name="pref_CameraDrag_Note">The effect of air resistance on the camera.</string>
+    <string name="pref_CameraMass_Note">How heavy the camera is.</string>
+    <string name="pref_CameraOrbitRadius_Note">How far from the camera sits from the center of the world.</string>
+    
+    <string name="txt_red">Red: </string>
+    <string name="txt_green">Green: </string>
+    <string name="txt_blue">Blue: </string>
+    <string name="txt_alpha">Glow: </string>
+    
+</resources>
