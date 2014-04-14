@@ -26,8 +26,10 @@
                 android:key="pref_Particle_Colour"
 			    android:title="@string/pref_Colour"
 			    custom:PreferenceName="pref_Particle_Colour"
+			    custom:SeekBarMin="0"
+			    custom:SeekBarMax="0"
 			    custom:Default="659881794"
-			    custom:Note="@string/pref_ParticleColour_Note"/>   
+			    custom:Note="@string/Blank"/>   
 		  	
             <com.raggamuffin.radiance.dialogs.SeekBarDialog
 			    android:key="pref_Particle_Drag"
@@ -66,8 +68,10 @@
                	android:key="pref_Graviton_Colour"
 		    	android:title="@string/pref_Colour"
 		    	custom:PreferenceName="pref_Graviton_Colour"
-		    	custom:Default="-13281"
-		    	custom:Note="@string/pref_GravitonColour_Note"/>  
+			    custom:SeekBarMin="0"
+			    custom:SeekBarMax="0"
+			    custom:Default="-13281"
+			    custom:Note="@string/Blank"/>  
 		    	
                 <com.raggamuffin.radiance.dialogs.SeekBarDialog
                 android:key="pref_Graviton_Colour_Radius"

@@ -108,9 +108,11 @@ public class ColourPickerDialog extends DialogPreference
 		TypedArray a = context.obtainStyledAttributes(attrs,R.styleable.SeekBarDialog);
 		
 		final int N = a.getIndexCount();
+		Log.e("Shit","N: " + Integer.toString(N));
 		for(int i = 0; i < N; i++)
 		{
 			int attr = a.getIndex(i);
+			Log.e("Shit","Index: " + Integer.toString(attr));
 			switch(attr)
 			{
 				case R.styleable.SeekBarDialog_PreferenceName:
@@ -119,6 +121,8 @@ public class ColourPickerDialog extends DialogPreference
 					
 				case R.styleable.SeekBarDialog_Default:
 					m_Default = a.getInt(i, -1);
+					Log.e("Shit","Default: " + Integer.toString(m_Default));
+					break;
 			}
 		}
 		a.recycle();
@@ -220,6 +224,8 @@ public class ColourPickerDialog extends DialogPreference
 		int packedValue = m_Preferences.getInt(PreferenceName, m_Default);
 		 
 		Log.e("Shit",Integer.toString(m_PackedValue));
+		Log.e("Shit",Integer.toString(m_Default));
+		
 		m_AlphaValue 	= packedValue >> 24 & 0xff;
 		m_RedValue 		= packedValue >> 16 & 0xff;
 		m_GreenValue 	= packedValue >> 8 & 0xff;

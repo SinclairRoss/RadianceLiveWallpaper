@@ -6,6 +6,5 @@
         <attr name="SeekBarMax"		format="integer"/>
         <attr name="Default"		format="integer"/>
         <attr name="Note"			format="string"/>
-        
     </declare-styleable>
 </resources>
