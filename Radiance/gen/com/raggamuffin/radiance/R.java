@@ -54,7 +54,7 @@ containing a value of this type.
         public static final int red=0x7f050000;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
+        public static final int icon=0x7f020000;
     }
     public static final class id {
         public static final int alphaSeekBar_ColourPickerDialog=0x7f08000c;

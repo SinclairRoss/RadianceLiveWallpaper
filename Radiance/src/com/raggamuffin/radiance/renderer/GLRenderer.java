@@ -46,7 +46,7 @@ public class GLRenderer implements GLSurfaceView.Renderer
 		GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);	// Set the colour that will be used to clear the buffer.
 
 		m_Point   = new GLPoint();		// Create a new glpoint.
-	
+
 		GLES20.glEnable(GLES20.GL_CULL_FACE);	// enable face culling.
         GLES20.glDisable(GLES20.GL_DEPTH_TEST);	// Disable depth testing
         GLES20.glEnable(GLES20.GL_BLEND);		// Enable blending.

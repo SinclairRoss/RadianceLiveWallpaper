@@ -4,7 +4,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="16"
+        android:minSdkVersion="11"
         android:targetSdkVersion="19" />
     
     <uses-feature
@@ -22,7 +22,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/icon"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" 
         android:permission="android.permission.BIND_WALLPAPER" android:hardwareAccelerated="true">
@@ -45,11 +45,11 @@
         </service>
 
         <activity
+            android:icon="@drawable/icon"
             android:label="@string/wallpaper_settings"
             android:name="com.raggamuffin.radiance.master.PaperSettings"
 			android:theme="@android:style/Theme.Holo"
-			android:exported="true"
-			android:icon="@drawable/ic_launcher">
+			android:exported="true">
 		</activity>
         
     </application>
