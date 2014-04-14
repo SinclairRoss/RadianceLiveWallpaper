@@ -7,12 +7,9 @@ import com.raggamuffin.radiance.logic.OrbitalCamera;
 
 import android.opengl.GLES20;
 import android.opengl.Matrix;
-import android.util.Log;
 
 public class GLCamera 
 {
-	public static final String TAG = "DEBUG GLCamera";
-	
 	// The view and projection matrices.
 	private final float[] m_ViewMatrix = new float[16];
 	private final float[] m_ProjMatrix = new float[16];
@@ -30,8 +27,6 @@ public class GLCamera
 
 	public GLCamera(OrbitalCamera camera)
 	{
-		Log.e(TAG, "GLCamera");
-		
 		m_Anchor = camera;
 	
 		m_Position = new float[3];
@@ -68,8 +63,6 @@ public class GLCamera
 	// On the event of the viewport changing this function sets the new dimentions of the viewport and sets the camera frustum.
 	public void ViewPortChanged(int width, int height)
 	{
-		Log.e(TAG, "ViewPortChanged");
-		
 		float AspectRatio = (float)width/(float)height;
 		GLES20.glViewport(0, 0, width, height);
 		Matrix.frustumM(m_ProjMatrix, 0, -AspectRatio, AspectRatio, -1, 1, m_Near, m_Far);

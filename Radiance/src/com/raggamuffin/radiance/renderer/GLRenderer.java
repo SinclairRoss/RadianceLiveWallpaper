@@ -15,12 +15,9 @@ import com.raggamuffin.radiance.master.RendererPacket;
 import android.opengl.GLES20;
 import android.opengl.GLSurfaceView;
 import android.opengl.Matrix;
-import android.util.Log;
 
 public class GLRenderer implements GLSurfaceView.Renderer
 {
-	public static final String TAG = "GLRenderer";
-	
 	private float[] m_MVPMatrix  = new float[16];	// MVP Matrix.
     private float[] m_MMatrix 	 = new float[16];	// Model Matrix.		
     private float[] m_ViewMatrix = new float[16];	// View Matrix.
@@ -33,8 +30,6 @@ public class GLRenderer implements GLSurfaceView.Renderer
 
 	public GLRenderer(RendererPacket packet)
 	{
-		Log.e(TAG, "GLRenderer");
-
 		m_Camera = new GLCamera(packet.GetOrbitalCamera());	// Create a new GLCamera using the Orbital camera from the Renderer packet as an anchor.
 		m_Particles = packet.GetParticles();				// get the vector of particles from the renderer packet.
 	}
@@ -42,7 +37,6 @@ public class GLRenderer implements GLSurfaceView.Renderer
 	@Override
 	public void onSurfaceCreated(GL10 unused, EGLConfig config) 
 	{
-		Log.e(TAG, "onSurfaceCreated");
 		GLES20.glClearColor(0.0f, 0.0f, 0.0f, 1.0f);	// Set the colour that will be used to clear the buffer.
 
 		m_Point   = new GLPoint();		// Create a new glpoint.
@@ -94,7 +88,6 @@ public class GLRenderer implements GLSurfaceView.Renderer
 	@Override
 	public void onSurfaceChanged(GL10 unused, int width, int height) 
 	{
-		Log.e(TAG, "onSurfaceChanged");
 		m_Camera.ViewPortChanged(width, height);
 	}
 	

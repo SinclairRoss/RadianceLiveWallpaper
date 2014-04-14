@@ -12,12 +12,9 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
-import android.util.Log;
 
 public class MasterThread extends Thread
 {
-	public static String TAG = "GameThread";
-	
 	private LogicMaster m_Logic;
 	private boolean m_Running;
 	private boolean m_Paused;
@@ -46,8 +43,7 @@ public class MasterThread extends Thread
 	public MasterThread(RendererPacket packet, Handler handler, Context context)
 	{
 		super();
-		Log.e(TAG,"GameThread");
-
+		
 		m_Logic = new LogicMaster(packet, context);
 		
 		m_Running = true;
@@ -99,13 +95,11 @@ public class MasterThread extends Thread
 	
 	public void PauseThread()
 	{
-		Log.e(TAG,"PauseThread");
 		m_Paused = true;
 	}
 	
 	public void ResumeThread()
 	{
-		Log.e(TAG,"ResumeThread");
 		m_Paused = false;
 	}
 	

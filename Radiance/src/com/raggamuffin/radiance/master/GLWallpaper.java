@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.MotionEvent;
@@ -20,7 +19,6 @@ import android.view.SurfaceHolder;
 
 public class GLWallpaper extends GLWallpaperService
 {
-	public static final String TAG = "GLWallpaper";
 	public static int REQUEST_RENDER = 0;
 	public static int REQUEST_INPUT = 1;
 
@@ -34,15 +32,12 @@ public class GLWallpaper extends GLWallpaperService
 	@Override
 	public Engine onCreateEngine() 
 	{
-		Log.e(TAG,"onCreateEngine");
-		
 		return new WallPaperEngine();
 	}
 	
 	@Override
 	public void onCreate()
 	{
-		Log.e(TAG,"onCreate");
 		super.onCreate();
 		
 		m_Context = this;
@@ -51,14 +46,11 @@ public class GLWallpaper extends GLWallpaperService
 	@Override 
 	public void onDestroy()
 	{
-		Log.e(TAG,"onDestroy");
-		
 		super.onDestroy();
 	}
 
 	private class WallPaperEngine extends GLEngine
 	{
-		private final String TAG = "WallpaperEngine";
 		private GLRenderer m_Renderer;
 		private MasterThread m_MasterThread;
 		private RendererPacket m_RendererPacket;
@@ -66,20 +58,16 @@ public class GLWallpaper extends GLWallpaperService
 		private GestureDetector m_GestureDetector;
 		private Bundle m_InputBundle;
 
-
 		public WallPaperEngine()
 		{	
 			super();
-			Log.e(TAG,"WallPaperEngine()");
-			
+
 			m_InputBundle = new Bundle();
 		}
 		
 		@Override
 		public void onCreate(SurfaceHolder surfaceHolder) 
 		{
-			Log.e(TAG,"onCreate()");
-			
 			super.onCreate(surfaceHolder);
 			
 			// Defines the gesture listener.
@@ -198,14 +186,12 @@ public class GLWallpaper extends GLWallpaperService
 		@Override
 		public void onSurfaceChanged(SurfaceHolder holder, int format, int width, int height)
 		{
-			Log.e(TAG,"onSurfaceChanged GLEngine");
 			super.onSurfaceChanged(holder, format, width, height);
 		}
 		
 		@Override
 		public void onSurfaceCreated(SurfaceHolder holder)
 		{
-			Log.e(TAG,"onSurfaceCreated GLEngine");
 			super.onSurfaceCreated(holder);
 		}
 		
@@ -218,18 +204,14 @@ public class GLWallpaper extends GLWallpaperService
 		// When the visibility of the wallpaper changes this function will pause and resume the master thread.
 		public void onVisibilityChanged(boolean visible)
 		{
-			Log.e(TAG,"onVisibilityChanged GLEngine");
-			
 			super.onVisibilityChanged(visible);
 			
 			if(visible)			
 			{
-				Log.e(TAG,"Visible");
 				m_MasterThread.ResumeThread();
 			}
 			else
 			{
-				Log.e(TAG,"Not Visible");
 				m_MasterThread.PauseThread();
 			}
 		}	
